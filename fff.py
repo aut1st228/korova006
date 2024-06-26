@@ -1,2 +1,1 @@
-print("hello")
-print("zxcqwe")
+print("zxc")
