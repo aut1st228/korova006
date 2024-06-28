@@ -4,35 +4,60 @@
  ‘’’ пусть играют боты Shadow Shaman и Meepo до 5 штрафных очков, и они разыграют 4 карт:
    ----
 cards in a row:   b22\ y54\ g60\ o101
+
 Shadow shaman’s hand: o24, g38, b79, y150
+
 Meepo’s hand: g12, o50, b65, y23
 ----
 Meepo goes with g12, Shadow shaman goes with b79
+
 cards in a row:   b22 g12\ y54\g60 b79\ o101
+
 Shadow shaman’s hand: o24, g38, y150
+
 Meepo’s hand: o50, b65, y23
 ----
 Meepo goes with y23, Shadow shaman goes with y150
- cards in a row:   y150\ y54\g60 b79\ o101
+ 
+cards in a row:   y150\ y54\g60 b79\ o101
+
 Shadow shaman has a larger card than in a rows, so he takes any row(1)
+
 Shadow shaman’s hand:g12, y23
+
 Shadow shaman’s fine: b22, g12, y23 = (6points)
+
 Meepo’s hand: o50, b65
 ---
 Meepo Wins’’’
 
 {
+
   " cards in a row": " y150\ y54\g60 b79\ o101",
+
   "current_player_index": 0,
+
   "players": [
+
     {
+
       "name": " Shadow shaman",
+
       "hand": " g12, y23"
+
       ‘’fine’’: ‘’ : b22, g12, y23’’
+
     },
+
     {
+
       "name": " Meepo ",
+
       "hand": " o50, b65"
+
+
     }
+
   ]
+
 }
