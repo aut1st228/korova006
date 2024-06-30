@@ -39,4 +39,5 @@ class Row
             save() -> json
             load(json)
         }
+
 GameState o-- Row
