@@ -10,7 +10,7 @@ def test_draw_card():
     deck = Deck(cards=card_list)
     c = deck.draw_card()
     assert str(c) == 'y4'
-    assert str(deck) == 'b2 o7'
+    assert str(deck) == 'b2 o5'
 
 def test_shuffle():
     random.seed(7)
