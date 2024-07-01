@@ -22,16 +22,10 @@ class Card:
 
     @staticmethod
     def all_cards(umbers=None, numbers=None):
-        """Возвращает все карты.
-        :param colors:
-        :param numbers:
-        """
         if numbers is None:
             numbers = Card.NUMBERS
             cards = []
             for n in numbers:
                 c = Card( n)
                 cards.append(c)
-
-                # return [Card(col, n) for col in colors for n in numbers]
         return cards
