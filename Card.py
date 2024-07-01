@@ -2,7 +2,7 @@ from deck import Card
 
 
 class Card:
-    NUMBERS = list(range(10)) + list(range(1, 10))
+    NUMBERS = list(range(104))
 
     def __init__(self, number: int):
         self.number = number
