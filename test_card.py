@@ -1,8 +1,11 @@
 import pytest
 from Card import Card
+
 def test_card_creation():
     c = Card(50)
+    assert c.number == 50
 def test_card_equality():
+    c1 = Card(30)
     c2 = Card(30)
     assert c1 == c2
     c3 = Card(47)

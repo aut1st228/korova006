@@ -48,7 +48,7 @@ class Card:
         cards = []
         for n in numbers:
             c = Card(n)
-        cards.append(c)
+            cards.append(c)
         return cards
 
 if __name__ == '__main__':
