@@ -1,8 +1,7 @@
-from Card_class import Card
-from Hand_class import Hand
+from hand import CardList
 
 
-class Row(Hand):
+class Row(CardList):
     def six_cards(self, card, player):
         a = self.score()
         player.points += a
