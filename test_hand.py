@@ -1,19 +1,13 @@
-import pytest
-from Hand_class import Hand
-from Card_class import Card
+from Card import Card
+from hand import Hand, CardList
 
-card3 = Card("A")
-hand.add_card(card3)
-assert hand.score() == 31
 
-card4 = Card("2")
-hand.add_card(card4)
-assert hand.score() == 33
+def test_card_list_create():
+    cl = CardList(Card(10), Card(33), Card(5))
+    assert cl.cards[0] == Card(10)
+    assert cl.cards[1] == Card(33)
+    assert cl.cards[2] == Card(5)
 
-card5 = Card("5")
-hand.add_card(card5)
-assert hand.score() == 38
-
-card6 = Card("10")
-hand.add_card(card6)
-assert hand.score() == 48
+def test_cl_save():
+    cl = CardList(Card(10), Card(33), Card(5))
+    assert cl.save() == '10 33 5'
