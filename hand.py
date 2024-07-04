@@ -1,4 +1,5 @@
 from Card import Card
+from deck import Deck
 class CardList:
     def __init__(self, *args):
         self.cards = list(args)
@@ -17,6 +18,15 @@ class CardList:
 
     def save(self):
         return repr(self)
+
+    @classmethod
+    def load(cls, text: str):
+        words = text.split()
+        cards = []
+        for w in words:
+            c = Card.load(w)
+            cards.append(c)
+        return cls(*cards)
 
 
 class Hand(CardList):

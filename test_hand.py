@@ -11,3 +11,8 @@ def test_card_list_create():
 def test_cl_save():
     cl = CardList(Card(10), Card(33), Card(5))
     assert cl.save() == '10 33 5'
+
+card_list = [Card(2), Card(70), Card(44)]
+def test_card_list_load():
+    deck = CardList.load("2 70 44")
+    assert deck.cards == card_list
