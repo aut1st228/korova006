@@ -59,5 +59,3 @@ class Player:
             'hand': self.hand.save(),
             'is_human': isinstance(self.actor, Human)
         }
-with open('players.json', 'r', encoding='utf-8') as file:
-    json.dump()
