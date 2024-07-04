@@ -33,7 +33,7 @@ Meepo Wins’’’
 
 {
 
-  " cards in a row": " y150\ y54\g60 b79\ o101",
+ "table" : ["12 16 21", "3", "91 95 102", "17 23"],
 
   "current_player_index": 0,
 
@@ -43,9 +43,9 @@ Meepo Wins’’’
 
       "name": " Shadow shaman",
 
-      "hand": " g12, y23"
+      "hand": "12 23"
 
-      ‘’fine’’: ‘’ : b22, g12, y23’’
+      "fine": 5
 
     },
 
@@ -53,8 +53,9 @@ Meepo Wins’’’
 
       "name": " Meepo ",
 
-      "hand": " o50, b65"
+      "hand": "50 65"
 
+      "fine": 10
 
     }
 
