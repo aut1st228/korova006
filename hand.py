@@ -28,11 +28,14 @@ class CardList:
             cards.append(c)
         return cls(*cards)
 
+    def __eq__(self, other):
+        return self.cards == other.cards
+
 
 class Hand(CardList):
     def __init__(self, *args):
         super().__init__(*args)
 
     def remove_card(self, card):
-        self.cards.remove(card.value)
+        self.cards.remove(card)
 

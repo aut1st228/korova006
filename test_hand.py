@@ -26,4 +26,9 @@ def test_score():
     cl = CardList(Card(2), Card(70), Card(44))
     assert cl.score() == 9
 
+def test_hand():
+    hand = Hand(Card(2), Card(70), Card(44))
+    hand.remove_card(Card(44))
+    assert hand == Hand(Card(2), Card(70))
+
 
