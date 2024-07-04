@@ -8,7 +8,7 @@ class CardList:
         return ' '.join(map(repr, self.cards))   # [3, 64, 27, 5]    '3 64 27 5'
 
     def add_card(self, card):
-        self.cards.append(card.value)
+        self.cards.append(card)
 
     def score(self):
         summ = 0
