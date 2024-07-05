@@ -1,12 +1,22 @@
-import pytest
 from row import Row
+from hand import Card
+from player import Player
 
-def test_six_cards():
+
+def test_six_cards(points=None):
     row = Row()
-    player = type('Player', (object,), {'points': 0})
-    card = '2 70 44'
-    expected_points = 9
-    row.six_cards(card, player)
-    assert player.points == expected_points
+    player = Player(points)
+    card1 = Card(2)
+    card2 = Card(70)
+    card3 = Card(44)
+
+    row.add_card(card1)
+    row.add_card(card2)
+    row.add_card(card3)
+
+    row.six_cards(card3, player)
+
+    assert player.points == 9
+
 
 
